@@ -27,6 +27,7 @@ const getUrl = async (thisMode: number): Promise<Response> => {
     params: {
       mode: thisMode,
       type: 'json',
+      proxy: 'pimg',
     }
   });
   return data;
