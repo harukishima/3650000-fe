@@ -27,9 +27,9 @@ const getUrl = async (thisMode: number): Promise<Response> => {
     params: {
       mode: thisMode,
       type: 'json',
-      proxy: 'pimg',
     }
   });
+  data.url = `https://image-proxy.harukishima.repl.co/image?url=${data.url}`;
   return data;
 }
 
